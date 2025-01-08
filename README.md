@@ -1,6 +1,6 @@
 # cse210-student-template
 My name is wesley Hopkins and this is for 
-students in CSE 210, 2025 winter semester.
+students in CSE 210, 2025 winter semester. 
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
