@@ -3,6 +3,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "name": "Sandbox Project",
             "type": "coreclr",
@@ -86,7 +87,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-prepare-Learning02",
-            "program": "${workspaceFolder}/prepare/Learning02/bin/Debug/net8.0/Learning02.dll",
+            "program": "${workspaceFolder}/prepare/Learning02/bin/Debug/net9.0/Learning02.dll",
             "args": [],
             "cwd": "${workspaceFolder}/prepare/Learning02",
             "console": "integratedTerminal",
