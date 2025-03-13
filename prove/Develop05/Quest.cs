@@ -38,7 +38,7 @@ class Quest
 
     public void DisplayQuest()
     {
-        Console.WriteLine($"Quest: {_name}\n {_description} \n Points: {_points} \n Status: {getStatus()} \n");
+        Console.WriteLine($"Quest: {_name}\n {_description} \n Points: {_points} \n");
     }
 
     public string ToCsvString()
@@ -46,15 +46,30 @@ class Quest
         return $"{_name}^{_description}^{_points}^{_isCompleted}";
     }
 
-    public static Quest FromCsvString(string csvLine)
+     public static Quest FromCsvString(string csvLine)
     {
-        string[] parts = csvLine.Split('^');
+        string[] primarySplit = csvLine.Split(": ", 2);
+        string questType = primarySplit[0];
+        string data = primarySplit[1];
+
+        string[] parts = data.Split('^');
         string name = parts[0];
         string description = parts[1];
         int points = int.Parse(parts[2]);
         bool isCompleted = bool.Parse(parts[3]);
 
-        return new Quest(name, description, points, isCompleted);
-
+        if (questType == "Eternal Quest")
+        {
+            return new EternalQuest(name, description, points, isCompleted);
+        }
+        else if (questType == "Checklist Quest")
+        {
+            int stepCount = int.Parse(parts[4]);
+            return new ChecklistQuest(name, description, points, stepCount, isCompleted);
+        }
+        else
+        {
+            return new Quest(name, description, points, isCompleted);
+        }
     }
 }
