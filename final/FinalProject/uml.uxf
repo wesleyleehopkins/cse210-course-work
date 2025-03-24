@@ -1,0 +1,70 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Program
+--
+
+--
++ Main(): Void
++DisplayMenu(): 
++ RoutetoChoice(selection): void
++ GetDateFromUser(): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>0</y><w>240</w><h>210</h></coordinates><panel_attributes>MealTracker
+--
+- FoodLog: FoodLog
+-FitnessPal: MyFitnesspalData
+- Compare: MealComparor
+-report : MealReport
+--
++ GetUserChoice(): String
++ ViewDailyLog(date: String): void
++ InputMeals(date: string) void
++ CompareMealLogs(date: string) : void
++ GenerateReport(date: string): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>30</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>0</y><w>480</w><h>240</h></coordinates><panel_attributes>Meal
+--
+- FoodName: string
+-ServingSize: string
+- Calories: int
+- protein: int
+- carbs: int
+- fat: int
+--
++ meal(name: string, servingSize: string, calories: int, protein: int, carbs: int, fat: int)
++ GetName(): string
++ GetServingSize(): string
++ GetCalories(): int
++ GetProtein(): int
++ GetCarbs(): int
++ GetFat(): int
++ ToString(): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>370</y><w>260</w><h>190</h></coordinates><panel_attributes>FoodLog
+--
+- meals: List&lt;Meal&gt;
+--
++ AddMeal(meal: Meal): void
++ GetMealsForDate(date: string): List&lt;Meal&gt;
++ SaveToCSV(filePath: string): void </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>370</y><w>210</w><h>190</h></coordinates><panel_attributes>MyFitnessPalData
+--
+- fitnessPalMeals: List&lt;Meal&gt;
+--
++ ReadFromCSV(filePath: string) : List&lt;Meal&gt;
++GetMealsForDate(date: string) List&lt;Meal&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>240</y><w>210</w><h>190</h></coordinates><panel_attributes>MealReport
+--
+
+--
++ GenerateSummary(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>120</y><w>90</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>230</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>20;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>230</y><w>140</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>420</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>500</y><w>210</w><h>190</h></coordinates><panel_attributes>MealComparison
+--
+- foodLogMeals: List&lt;Meal&gt;
+- fitnessPalMeals: List&lt;Meal&gt;
+--
++ CompareTotals(date: string) void
++ GenerateSummary(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>200</y><w>260</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;40;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>200</y><w>210</w><h>320</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;300;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>230</y><w>170</w><h>160</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;150;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>UserInputHandler
+--
+
+--
++ GetDate(): string
++ GetMealInput(): Meal
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>200</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>630</y><w>330</w><h>190</h></coordinates><panel_attributes>FileHandler
+--
+
+--
++ ReadCSV(filePath: string): List&lt;string[ ]&gt;
++ WriteCSV(filePath: string, data : List&lt;string [ ]&gt;): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>550</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;80;60;10</additional_attributes></element></diagram>
