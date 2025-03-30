@@ -16,7 +16,7 @@ namespace MealTrackingSystem
             this._meals = new List<Meal>();
         }
 
-        // Read-only property to access the list of meals.
+       
         public List<Meal> Meals
         {
             get { return this._meals; }
@@ -46,8 +46,7 @@ namespace MealTrackingSystem
             return mealsForDate;
         }
 
-        // Loads sample data for demonstration purposes.
-        // In a complete system, this might load data from a CSV file.
+
         public void LoadSampleData()
         {
             // Create sample Meal objects with explicit types.
