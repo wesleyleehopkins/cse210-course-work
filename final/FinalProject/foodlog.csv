@@ -1,34 +1,5 @@
-Date,Name,servingSize,Calories,Protien,fat,carbs,
-2019-01-31,"campell's- v8 original (11.5 oz Can), 340mL",340 mL,70,2,14,0
-2019-01-31,"nestle-breakfast Essentials, 1 packet",1 pouch,130,5,27,1
-2019-01-31,Tyson Chicken Patty,1 patty,400,18,20,26
-2019-01-31,pepsi,1 can,150,0,41,0
-
-2019-02-02,Nestle- Carnation Breakfast essentials,1 packet,260,10,54,1
-2019-02-02,muffin,1,158,5,23,6
-2019-02-02,avocato raw,1g,112,4,5,29
-2019-02-02,sprouts,1 slice,276,16,48,2
-2019-02-02,lunch meat,1 slice,125,23,5,3
-2021-02-23,core power elite strawberry,1,230,42,8,4
-2021-02-23,Egg,1 egg,143,13,1,10
-2021-02-23,hash browns,.94 cup,53,2,12,0
-2021-02-23,Monster Import,1/2 a can,210,0,55,0
-2021-02-23,salisburry stake/gravey,256 g,360,14,22,24
-2021-02-23,optimum nutrition mass gainer,1 scoop,650,60,85,8
-2021-02-23,caesar Salad,1,300,17,8,22
-2021-02-23,preworkout,1 scoop,15,0,4,0
-2021-02-23,whole Milk,12fl,225,12,18,12
-2021-02-24,hashbrowns,.63 cup,35,1,8,0
-2021-02-24,Egg,1,143,13,1,10
-2021-02-24,toast,1 slice,100,4,20,1
-2021-02-24,corn beef hash,47g,90,4,5,7
-2021-02-24,lunchables,1 container,260,12,22,13
-2021-02-24,corePower strawberry,1,230,42,8,4
-2021-02-24,rice-a-roni four cheese,1 cup,270,6,38,12
-2021-02-24,mass gainer,1 scoop,650,60,85,8
-2021-02-24,milk,12fl,225,12,18,12
-2021-02-24,monster Maxx - mango,12fl,10,0,9,0
-2021-02-24,smart water,50 oz,0,0,0,0
-2023-05-30,apple,1,116,1,5,0
-2023-05-30,turkey burger,1,110,77,0,23
-2023-05-30,celery,1,1,1,1,0
+Date,Name,ServingSize,Calories,Protein,Carbs,Fat
+2023-06-01,Breakfast,1,440,18,60,13
+2023-06-01,Lunch,1,884,95,91,20
+2023-06-01,Dinner,1,490,52,56,7
+2023-06-01,Snack,1,132,3,33,1
